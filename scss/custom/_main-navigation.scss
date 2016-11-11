@@ -1,0 +1,14 @@
+.main-navigation {
+  &__icon {
+    float: right;
+    cursor: pointer;
+  }
+
+  &__logo {
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: 20vw;
+    max-height: 15vh;
+    height: auto;
+  }
+}

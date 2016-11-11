@@ -1,0 +1,33 @@
+
+.header {
+
+    &__container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 4rem;
+        padding-top: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        //display: flex;
+        border: 1px solid red;
+    }
+
+}
+
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    /* height: 1px; */
+    /* margin: -1px; */
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+@media screen and (max-height: 450px) {
+
+}

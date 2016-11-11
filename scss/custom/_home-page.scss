@@ -1,0 +1,31 @@
+
+.section-container {
+
+  &__container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem;
+    padding-top: 2rem;
+    display: -ms-flexbox;
+    border: 1px solid red;
+  }
+
+  .content {
+    &__row {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+
+      &:first-child {
+
+        }
+      }
+    }
+}
+
+.branding {
+  background:url(../image/fill.jpg) no-repeat center;//dummy fill in image unti have real one
+  height: 600px;
+  margin: auto;
+}
+
