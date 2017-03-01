@@ -20721,11 +20721,12 @@ var Nav = React.createClass({displayName: "Nav",
   
 	render : function() {
 		return (
-			React.createElement("div", null, 
-				React.createElement("button", {
-					onClick: this.handleClick, 
-					style: {backgroundColor:this.state.active ? "red" : "blue"}}, "Button"
-				), 
+			  React.createElement("div", {className:"main-navigation container"},
+          React.createElement("icon", {onClick: this.handleClick,className:this.state.active ? "icon icon--hamburger" : "icon icon--close"}, "icon"),
+  				React.createElement("button", {
+  					onClick: this.handleClick, 
+  					style: {backgroundColor:this.state.active ? "yellow" : "blue"}}, "Button"
+  				), 
 				this.state.active ? this.renderMenu() : null
 			)
 		)
