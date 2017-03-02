@@ -11,4 +11,10 @@
     max-height: 15vh;
     height: auto;
   }
+
+  &__list {
+    li {
+      list-style-type: none;
+    }
+  }
 }

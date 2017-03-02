@@ -16,23 +16,29 @@ var Nav = React.createClass({displayName: "Nav",
   
 	render : function() {
 		return (
-		React.createElement("div", {className:"main-navigation container"},
-          React.createElement("icon", {onClick: this.handleClick,className:this.state.active ? "icon icon--hamburger" : "icon icon--close"}, "icon"),
-  				React.createElement("button", {
-  					onClick: this.handleClick, 
-  					style: {backgroundColor:this.state.active ? "yellow" : "blue"}}, "Button"
-  				), 
-				this.state.active ? this.renderMenu() : null
-			)
-		)
+          React.createElement("div", {className:"header__container"},
+            React.createElement("div", {className:"main-navigation container"},
+              React.createElement("div", {className:"main-navigation container"},
+                  React.createElement("i", {
+                    onClick: this.handleClick,
+                    className:this.state.active ? 
+                    "main-navigation__icon icon icon--hamburger" : " main-navigation__iconicon icon--close"}, null),
+                    this.state.active ? this.renderMenu() : null
+                  )
+                )
+              )
+            )
 	},
 
 	renderMenu: function() {
 		return (
-			React.createElement("ul", null, 
+			React.createElement("ul", {className:"main-navigation__list"}, null, 
 				React.createElement("li", null, "Item 1"), 
 				React.createElement("li", null, "Item 2"), 
-				React.createElement("li", null, "Item 3")
+				React.createElement("li", null, "Item 3"),
+        React.createElement("li", null, "Item 4"), 
+        React.createElement("li", null, "Item 5"), 
+        React.createElement("li", null, "Item 6")
 			)
 		);
 	}
