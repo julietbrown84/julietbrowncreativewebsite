@@ -22,7 +22,7 @@ var Nav = React.createClass({displayName: "Nav",
                   React.createElement("i", {
                     onClick: this.handleClick,
                     className:this.state.active ? 
-                    "main-navigation__icon icon icon--hamburger" : " main-navigation__iconicon icon--close"}, null),
+                    "main-navigation__icon icon icon--close " : " main-navigation__icon icon icon icon--hamburger"}, null),
                     this.state.active ? this.renderMenu() : null
                   )
                 )
@@ -36,12 +36,13 @@ var Nav = React.createClass({displayName: "Nav",
 				React.createElement("li", null, "Item 1"), 
 				React.createElement("li", null, "Item 2"), 
 				React.createElement("li", null, "Item 3"),
-        React.createElement("li", null, "Item 4"), 
-        React.createElement("li", null, "Item 5"), 
-        React.createElement("li", null, "Item 6")
+		        React.createElement("li", null, "Item 4"), 
+		        React.createElement("li", null, "Item 5"), 
+		        React.createElement("li", null, "Item 6")
 			)
 		);
 	}
 
 });
 module.exports = Nav;
+

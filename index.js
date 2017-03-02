@@ -3,7 +3,7 @@
 // https://github.com/kittykatattack/learningPixi#sizenscale
 // http://pixijs.github.io/examples/#/basics/basic.js
 
-var renderer = PIXI.autoDetectRenderer(1100, 400);
+var renderer = PIXI.autoDetectRenderer(1100, 180);
 document.getElementById('worm').appendChild(renderer.view);
 
 // create the root of the scene graph
@@ -13,7 +13,7 @@ var stage = new PIXI.Container();
 var count = 0;
 
 // build a rope!
-var ropeLength = 2800 / 15;
+var ropeLength = 2800 / 13;
 
 var points = [];
 
@@ -23,7 +23,7 @@ for (var i = 0; i < 20; i++)
 }
 
 var snakeTwo = new PIXI.mesh.Rope(PIXI.Texture.fromImage('snake-one.png'), points);
-var snakeOne = new PIXI.mesh.Rope(PIXI.Texture.fromImage(''), points);
+var snakeOne = new PIXI.mesh.Rope(PIXI.Texture.fromImage('snake-two.png'), points);
 var snakeThree = new PIXI.mesh.Rope(PIXI.Texture.fromImage('cat.png'), points);
 
 // snakes
@@ -33,17 +33,17 @@ snakeTwo.x = 559;
 snakeTwo.y = 9000;
 snakeTwo.position.set(204, 134);
 snakeTwo.height = 520;
-snakeTwo.width = 300;
+snakeTwo.width = 3000;
 
-snakeThree.x = 559;
-snakeThree.y = 6009;
-snakeThree.height = 200;
-snakeThree.width = 300;
+// snakeThree.x = 559;
+// snakeThree.y = 6009;
+// snakeThree.height = 200;
+// snakeThree.width = 300;
 
 // making the snake container
 var snakeContainer = new PIXI.Container();
     snakeContainer.position.x = 50;
-    snakeContainer.position.y = 200;
+    snakeContainer.position.y = 100;
 
 snakeContainer.scale.set(1000 / 4500);
 stage.addChild(snakeContainer);
@@ -51,7 +51,7 @@ stage.addChild(snakeContainer);
 // add the snakes to the container
 snakeContainer.addChild(snakeOne);
 snakeContainer.addChild(snakeTwo);
-snakeContainer.addChild(snakeThree);
+// snakeContainer.addChild(snakeThree);
 
 // start animating
 requestAnimationFrame(animate);

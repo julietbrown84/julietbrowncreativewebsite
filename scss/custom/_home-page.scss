@@ -10,6 +10,18 @@
     border: 1px solid red;
   }
 
+  &__branding {
+    background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one
+    height: 500px;
+    margin: auto;
+  }
+
+  &__first-animation-section {
+      border: 1px solid red;
+      height: 500px;
+      margin: auto;
+  }
+  
   .content {
     &__row {
       margin-top: 4rem;
@@ -22,9 +34,19 @@
     }
 }
 
+canvas {
+  padding: 0;
+  margin: 0 0 0 50px;
+}
+
 .branding {
   background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one
   height: 500px;
   margin: auto;
 }
 
+.first-animation-section {
+    border: 1px solid red;
+    height: 500px;
+    margin: auto;
+}
