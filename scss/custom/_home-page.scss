@@ -17,36 +17,40 @@
   }
 
   &__first-animation-section {
-      border: 1px solid red;
-      height: 500px;
+      border-bottom: 1px solid grey;
+      height: 680px;
       margin: auto;
   }
   
   .content {
     &__row {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 8px solid #00FA9A;
+      padding-bottom: 5rem;
 
       &:first-child {
 
         }
       }
     }
+
+    &__first-animation-section {
+      height: 150px;
+      margin-bottom: 100px;
+      background:url(../image/bed-image.png) no-repeat center;
+      background-size: 900px 150px;
+      margin: auto;
+    }
 }
 
 canvas {
   padding: 0;
-  margin: 0 0 0 50px;
+  margin: 0;
 }
 
 .branding {
   background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one
   height: 500px;
   margin: auto;
-}
-
-.first-animation-section {
-    border: 1px solid red;
-    height: 500px;
-    margin: auto;
 }

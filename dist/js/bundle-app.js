@@ -20735,10 +20735,14 @@ var Nav = React.createClass({displayName: "Nav",
             )
 	},
 
+  // const element = <item="item 1" />;
+  // note put 'props' in prameters when try to d it again
 	renderMenu: function() {
-		return (
+
+    return (
 			React.createElement("ul", {className:"main-navigation__list"}, null, 
-				React.createElement("li", null, "Item 1"), 
+			 // React.createElement("li", null, {props.item}),
+      	React.createElement("li", null, "Item 1"), 
 				React.createElement("li", null, "Item 2"), 
 				React.createElement("li", null, "Item 3"),
         React.createElement("li", null, "Item 4"), 
