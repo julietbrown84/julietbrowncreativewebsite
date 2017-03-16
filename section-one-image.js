@@ -61,18 +61,19 @@ stage.addChild(rect);
 
 var graphics = new PIXI.Graphics()
 graphics.lineStyle(0);
-graphics.beginFill(0xFFFF0B, 0.5);
+graphics.beginFill(0xff0000, 0.8);
 // rect.drawRect(-100, 20, 30, 10); // x, y, width, height
 graphics.drawCircle(50, 300, 35, 30);
 graphics.endFill();
 stage.addChild(graphics);
 
-var circe2 = new PIXI.Graphics()
-circe2.lineStyle(2);
-circe2.drawCircle(870, 300, 35, 30);
-circe2.endFill();
+var circle2 = new PIXI.Graphics()
+circle2.lineStyle(2);
+circle2.beginFill(0xff0000, 0.8);
+circle2.drawCircle(870, 300, 35, 30);
+circle2.endFill();
 
-stage.addChild(circe2);
+stage.addChild(circle2);
 // add stage to the canvas
 
 render();

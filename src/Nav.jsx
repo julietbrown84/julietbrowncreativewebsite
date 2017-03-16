@@ -17,8 +17,9 @@ var Nav = React.createClass({displayName: "Nav",
 	render : function() {
 		return (
           React.createElement("div", {className:"header__container"},
-            React.createElement("div", {className:"main-navigation container"},
+            
               React.createElement("div", {className:"main-navigation container"},
+  
                   React.createElement("i", {
                     onClick: this.handleClick,
                     className:this.state.active ? 
@@ -26,27 +27,29 @@ var Nav = React.createClass({displayName: "Nav",
                     this.state.active ? this.renderMenu() : null
                   )
                 )
-              )
-            )
+              
+          )
+            
 	},
 
   // const element = <item="item 1" />;
   // note put 'props' in prameters when try to d it again
 	renderMenu: function() {
 
-    return (
-			React.createElement("ul", {className:"main-navigation__list"}, null, 
-			 // React.createElement("li", null, {props.item}),
-      	React.createElement("li", null, "Item 1"), 
-				React.createElement("li", null, "Item 2"), 
-				React.createElement("li", null, "Item 3"),
-        React.createElement("li", null, "Item 4"), 
-        React.createElement("li", null, "Item 5"), 
-        React.createElement("li", null, "Item 6")
-			)
+    	return (
+	      	React.createElement("div", {className:"main-navigation__nav-box-right"},
+				React.createElement("ul", {className:"main-navigatioån__list main-navigation__nav-box-list-left"}, null, 
+				 // React.createElement("li", null, {props.item}),
+	        		React.createElement("li", null, "Item 1"), 
+	  				React.createElement("li", null, "Item 2"), 
+	  				React.createElement("li", null, "Item 3"),
+		          	React.createElement("li", null, "Item 4"), 
+		          	React.createElement("li", null, "Item 5"), 
+		          	React.createElement("li", null, "Item 6")
+				)
+	      	)
 		);
 	}
-
 });
-module.exports = Nav;
 
+module.exports = Nav;

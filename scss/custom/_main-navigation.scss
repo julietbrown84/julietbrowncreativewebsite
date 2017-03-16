@@ -3,6 +3,8 @@
     float: right;
     cursor: pointer;
     float: right;
+    position: absolute;
+    z-index: 99999999;
   }
 
   &__logo {
@@ -13,9 +15,38 @@
     height: auto;
   }
 
-  &__list {
+  &__list {å
     li {
       list-style-type: none;
     }
+  }
+
+  &__link {
+    display: inline;
+    float: right;
+  }
+
+  &__nav-box-right {
+    right: 0px;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 50%;
+    color: white;
+    height: 100%;
+    top: 0px;
+  }
+
+  &__nav-box-list-left {
+    position: fixed;
+    width: 50%;
+    color: white;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #00FA9A;
+    -webkit-transition: all 0.3s ease-in-out; 
+    -moz-transition: all 0.3s ease-in-out; 
+    -o-transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
   }
 }
