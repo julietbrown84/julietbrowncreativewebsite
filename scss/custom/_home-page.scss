@@ -11,7 +11,7 @@
   }
 
   &__branding {
-    background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one
+ /*   background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one*/
     height: 500px;
     margin: auto;
   }
@@ -38,7 +38,7 @@
     &__first-animation-section {
       height: 150px;
       margin-bottom: 100px;
-      background:url(../image/bed-image.png) no-repeat center;
+    /*  background:url(../image/bed-image.png) no-repeat center;*/
       background-size: 900px 150px;
       margin: auto;
     }
@@ -50,7 +50,7 @@ canvas {
 }
 
 .branding {
-  background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one
+  /*background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one*/
   height: 500px;
   margin: auto;
 }
