@@ -21,7 +21,7 @@ for (var i = 0; i < 20; i++)
 }
 
 
-var face = PIXI.Sprite.fromImage('section-one-face-image.jpg');
+var face = PIXI.Sprite.fromImage('image/section-one-face-image.jpg');
 face.position.x = 180;
 face.position.y = -500;
 // making the snake container
