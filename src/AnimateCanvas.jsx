@@ -34,7 +34,7 @@ var AnimateCanvas = React.createClass({
 			sectionContainer.position.x = 110;
 			sectionContainer.position.y =  220;
 			sectionContainer.scale.set(400 / 700);
-			
+
 			stage.addChild(sectionContainer);
 	
 			function face() {
@@ -44,7 +44,7 @@ var AnimateCanvas = React.createClass({
 
 				sectionContainer.addChild(face);
 			}
-
+			
 			requestAnimationFrame(animate);
 
 			function animate() {
@@ -69,6 +69,8 @@ var AnimateCanvas = React.createClass({
 				rect2.endFill();
 				stage.addChild(rect2);
 			};
+
+
 
 			// TO DO: work out why itwon't work dynamic
 			// function drawRectangle(width, height, x, y) {
