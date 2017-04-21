@@ -43,6 +43,9 @@ var AnimateFooter = React.createClass({
 		var snakeOne = new PIXI.mesh.Rope(PIXI.Texture.fromImage('image/snake-two.png'), points);
 		var snakeThree = new PIXI.mesh.Rope(PIXI.Texture.fromImage('image/cat.png'), points);
 
+		function snakeOne() {}
+
+		
 		// snakes
 		snakeOne.x = -59;
 
