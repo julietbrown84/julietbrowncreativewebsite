@@ -3,24 +3,20 @@ var AnimateCanvas = require('./AnimateCanvas');
 
 var Slider = React.createClass({
 
-	render: function() {
-		// var self = this;
-		return (
-			<AnimateCanvas />
-			// <div id="section-one-animation" ref={function(section) {
-			// 	self.section = section;
-			// }}>
-			// </div>
-		);
-	},
+    render: function() {
+        return (
+            <div className="row">
+				<div className="section-container section-container__container auto">
+					<section className="active content__row">
+						<AnimateCanvas /> 
+						<div className="section-container__first-animation-section"></div>
+					</section>
 
-	componentDidMount: function() {
-		// this.animate();
-	},
-
-	animate: function() {
-		
-	}
+					<div className="icon icon--arrow-down-grey"></div>
+				</div>
+			</div>
+        );
+    },
 });
 
 module.exports = Slider;

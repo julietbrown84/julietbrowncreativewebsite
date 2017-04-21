@@ -1,9 +1,7 @@
 var React = require('react');
 var ReactDom = require('react-dom');
 var Nav = require('./Nav');
-// var AnimateNav = require('./AnimateNav');
 var Slider = require('./Slider');
-var AnimateCanvas = require('./AnimateCanvas');
 var Sections = require('./Sections');
 var Footer = require('./Footer');
 
@@ -29,30 +27,18 @@ var App = React.createClass({
 			{
 				title: 'Menu item 5',
 				link: 'https://google.co.nz/'
+			},
+			{
+				title: 'Menu item 6',
+				link: 'https://google.co.nz/'
 			}
 		];
 
 		return (
 			<div className="app">
-				console.log('outpyt');
-
 				<Nav items={list} />
-
-				<div className="row">
-					<div className="section-container section-container__container auto">
-					 	<section className="active content__row">
-					 	   <div className="row fullWidth">
-					 	   		<div className="large-12 columns text-center">
-					 				<Slider />
-					 			</div>
-					 		</div>
-					 	</section>
-
-					 </div>
-				</div>
-
+				<Slider />
 				<Sections />
-
 				<Footer />
 			</div>
 		);

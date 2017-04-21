@@ -30,15 +30,18 @@ var Nav = React.createClass({
 	renderMenu: function() {
 		return (
 			<div className="main-navigation">
-				<ul className="main-navigation__list main-navigation__nav-box-list-left">
-					{
-						this.props.items.map(function(item) {
-							return (
-								<li><a href={item.link}>{item.title}</a></li>
-							);
-						})
-					}
-				</ul>
+				<div className="main-navigation__nav-box-list-left">
+					<ul className="main-navigation__list main-navigation__nav-box-list-left">
+						{
+							this.props.items.map(function(item) {
+								return (
+									<li><a href={item.link}>{item.title}</a></li>
+								);
+							})
+						}
+					</ul>
+				</div>
+				
 				<div className="main-navigation__nav-box-right">
 					
 				</div>

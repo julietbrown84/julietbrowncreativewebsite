@@ -5,7 +5,7 @@ var AnimateCanvas = React.createClass({
 
 	render: function() {
 		var self = this;
-		console.log('hi');
+		
 		return (
 			<div id="section-one-animation" ref={function(section) {
 				self.section = section;
