@@ -6,11 +6,12 @@ var Sections = React.createClass({
         return (
             <div className="row">
                 <div className="section-container section-container__container"> 
+                    
                     <section className="content__row active">
                           <div className="row fullWidth">
                               <div className="large-12 columns text-center">
                                   <div className="section-container__branding">
-                                    <p>Content of section 3.</p>
+                                    <p>Content hello hello.</p>
                                   </div>
                             </div>
                          </div>
@@ -43,10 +44,15 @@ var Sections = React.createClass({
                      </div>
                   </div>
 
-                  <div className="footer__logo">
-                      <i className="icon icon--hamburger"></i>
-                      <div className="footer__logo-text">© 2016T testest </div>
-                  </div>
+                  <section className="content__row active">
+                        <div className="row fullWidth">
+                            <div className="large-12 columns text-center">
+                                <div className="section-container__branding">
+                                  <p>Content hello hello.</p>
+                                </div>
+                          </div>
+                       </div>
+                  </section>
                 </div>
             </div>
         );

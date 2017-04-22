@@ -25,12 +25,11 @@ var AnimateCanvas = React.createClass({
 
 		function createScene() {
 			// create the root of the scene graph
-
-
 			var stage = new PIXI.Container();
+			var sectionContainer = new PIXI.Container();
+			
 		    renderer.backgroundColor = 0xffffff;
 
-			var sectionContainer = new PIXI.Container();
 			sectionContainer.position.x = 110;
 			sectionContainer.position.y =  220;
 			sectionContainer.scale.set(400 / 700);

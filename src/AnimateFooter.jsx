@@ -20,64 +20,63 @@ var AnimateFooter = React.createClass({
 
     animate: function() {
 
-		var renderer = PIXI.autoDetectRenderer(1000, 180);
+		var renderer = PIXI.autoDetectRenderer(1000, 60);
 		this.section.appendChild(renderer.view);
 		 
 		// create the root of the scene graph
 		var stage = new PIXI.Container();
 	    renderer.backgroundColor = 0xffffff;
 
-		var count = 0;
+		function logo() {
+			var logo = PIXI.Sprite.fromImage('image/section-one-face-image.jpg');
+			logo.position.x = 30;
+			logo.position.y = -400;
+			logo.scale.set(30 / 30);
+			tenticleContainer.addChild(logo);
+		}
 
+		// TO DO: refactor
+
+		var count = 0;
 		// build a rope!
 		var ropeLength = 2800 / 13;
-
 		var points = [];
-
-		for (var i = 0; i < 20; i++)
-		{
+		for (var i = 0; i < 20; i++){
 		    points.push(new PIXI.Point(i * ropeLength, 0));
 		}
 
-		var snakeTwo = new PIXI.mesh.Rope(PIXI.Texture.fromImage('image/snake-one.png'), points);
-		var snakeOne = new PIXI.mesh.Rope(PIXI.Texture.fromImage('image/snake-two.png'), points);
-		var snakeThree = new PIXI.mesh.Rope(PIXI.Texture.fromImage('image/cat.png'), points);
+		var tenticle = new PIXI.mesh.Rope(PIXI.Texture.fromImage('image/snake-one.png'), points);
+		var tenticleOne = new PIXI.mesh.Rope(PIXI.Texture.fromImage('icon/hamburger.svg'), points);
 
-		function snakeOne() {}
+		function tenticleOne() {}
 
-		
-		// snakes
-		snakeOne.x = -59;
+		// tenticles
+		tenticleOne.x = -59;
 
-		snakeTwo.x = 559;
-		snakeTwo.y = 9000;
-		snakeTwo.position.set(204, 134);
-		snakeTwo.height = 520;
-		snakeTwo.width = 3000;
-
-		// snakeThree.x = 559;
-		// snakeThree.y = 6009;
-		// snakeThree.height = 200;
-		// snakeThree.width = 300;
+		tenticle.x = 59;
+		tenticle.x = 159;
+		tenticle.y = 9000;
+		tenticle.position.set(204, 134);
+		tenticle.height = 520;
+		tenticle.width = 3000;
 
 		// making the snake container
-		var snakeContainer = new PIXI.Container();
-		    snakeContainer.position.x = 50;
-		    snakeContainer.position.y = 100;
+		var tenticleContainer = new PIXI.Container();
+		    tenticleContainer.position.x = 20;
+		    tenticleContainer.position.y = 10;
 
-		snakeContainer.scale.set(1000 / 4500);
-		stage.addChild(snakeContainer);
+		tenticleContainer.scale.set(1000 / 4500);
+		stage.addChild(tenticleContainer);
 
 		// add the snakes to the container
-		snakeContainer.addChild(snakeOne);
-		snakeContainer.addChild(snakeTwo);
-		// snakeContainer.addChild(snakeThree);
+		tenticleContainer.addChild(tenticleOne);
+		tenticleContainer.addChild(tenticle);
+		// tenticleContainer.addChild(snakeThree);
 
 		// start animating
 		requestAnimationFrame(animate);
 
 		function animate() {
-
 		    count += 0.1;
 
 		    // make the snake
@@ -92,7 +91,7 @@ var AnimateFooter = React.createClass({
 		    requestAnimationFrame(animate);
 		}
 
-
+		logo();
 	}
 });
 
