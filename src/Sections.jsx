@@ -1,4 +1,5 @@
 var React = require('react');
+var Video = require('./Video');
 
 var Sections = React.createClass({
 
@@ -47,9 +48,7 @@ var Sections = React.createClass({
                   <section className="content__row active">
                         <div className="row fullWidth">
                             <div className="large-12 columns text-center">
-                                <div className="section-container__branding">
-                                  <p>Content hello hello.</p>
-                                </div>
+                              <Video /> 
                           </div>
                        </div>
                   </section>

@@ -3,7 +3,6 @@ var ReactDom = require('react-dom');
 var Nav = require('./Nav');
 var Slider = require('./Slider');
 var Sections = require('./Sections');
-var Video = require('./Video');
 var Footer = require('./Footer');
 
 var App = React.createClass({ 
@@ -30,7 +29,7 @@ var App = React.createClass({
 				link: 'https://google.co.nz/'
 			},
 			{
-				title: 'Menu item 9',
+				title: 'Menu item 6',
 				link: 'https://google.co.nz/'
 			}
 		];
@@ -40,7 +39,6 @@ var App = React.createClass({
 				<Nav items={list} />
 				<Slider />
 				<Sections />
-				<Video />
 				<Footer />
 			</div>
 		);
