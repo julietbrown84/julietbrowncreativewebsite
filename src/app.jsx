@@ -30,7 +30,7 @@ var App = React.createClass({
 				link: 'https://google.co.nz/'
 			},
 			{
-				title: 'Menu item 7',
+				title: 'Menu item 9',
 				link: 'https://google.co.nz/'
 			}
 		];

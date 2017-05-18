@@ -9,9 +9,22 @@ var Nav = React.createClass({
 	},
 
 	handleClick: function() {
+		var self = this;
+
 		this.setState({
 			active: !this.state.active
+		},
+		function() {
+			console.log('left side and right side');
+			this.refs.leftside.classList.toggle('active');
+			this.refs.rightside.classList.toggle('active');
 		});
+		setTimeout(function() {
+	    	self.refs.leftside.classList.toggle('active');
+	        setTimeout(function() {
+		    	self.refs.rightside.classList.toggle('active');
+		    }, 900);
+	    }, 200); 
 	},
 
 	render: function() {
@@ -30,8 +43,8 @@ var Nav = React.createClass({
 	renderMenu: function() {
 		return (
 			<div className="main-navigation">
-				<div className="main-navigation__nav-box-list-left">
-					<ul className="main-navigation__list main-navigation__nav-box-list-left">
+				<div className="main-navigation__nav-box-list-left" ref="close" ref="leftside">
+					<ul className="main-navigation__list">
 						{
 							this.props.items.map(function(item) {
 								return (
@@ -42,7 +55,7 @@ var Nav = React.createClass({
 					</ul>
 				</div>
 				
-				<div className="main-navigation__nav-box-right">
+				<div className="main-navigation__nav-box-right" ref="rightside">
 					
 				</div>
 			</div>
