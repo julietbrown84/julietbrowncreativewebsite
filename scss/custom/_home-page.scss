@@ -1,17 +1,38 @@
 .section-container {
-
+   
   &__container {
     width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 4rem;
-    padding-top: 2rem;
+    margin: auto;
+    padding: 8rem;
     display: -ms-flexbox;
-    border: 1px solid red;
+    border-left: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+    max-width: 1600px;
+    padding-top: 2rem;
   }
 
-  &__branding {
-    background:url(../image/test.png) no-repeat center;//dummy fill in image unti have real one
+  &__artwork-one {
+    background:url(../image/artwork-one.jpg) no-repeat center;//dummy fill in image unti have real one
+    background-size: 400px;
+    height: 500px;
+    margin:  20px auto;
+  }
+
+  &__artwork-two {
+    background:url(../image/artwork-two.jpg) no-repeat center;//dummy fill in image unti have real one
+    background-size: 500px;
+    height: 500px;
+    margin: 20px auto;
+  }
+
+  &__artwork-three {
+    background:url(../image/artwork-three.jpg) no-repeat center;//dummy fill in image unti have real one
+    height: 500px;
+    margin: 20px auto;
+  }
+
+  &__large-image {
+    background:url(../image/artwork-three.jpg) no-repeat center;
     height: 500px;
     margin: auto;
   }
@@ -19,15 +40,17 @@
   &__first-animation-section {
       border-bottom: 1px solid grey;
       height: 680px;
-      margin: auto;
+      margin: 20px auto;
   }
   
   .content {
+
     &__row {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      border-bottom: 8px solid #00FA9A;
-      padding-bottom: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #00FA9A;
+        padding-bottom: 2rem;
+
 
       &:first-child {
 
@@ -36,11 +59,11 @@
     }
 
     &__first-animation-section {
-      height: 150px;
-      margin-bottom: 100px;
-      background:url(../image/bed-image.png) no-repeat center;
-      background-size: 900px 150px;
-      margin: auto;
+        height: 150px;
+        margin-bottom: 100px;
+        background:url(../image/fill.jpg) no-repeat center;
+        background-size: 900px 150px;
+        margin: auto;
     }
 }
 
@@ -49,8 +72,7 @@ canvas {
   margin: 0;
 }
 
-.branding {
-  background:url(../image/test.png) no-repeat center;
-  height: 500px;
-  margin: auto;
-}
+/*.carousel--image {
+    height: 400px;
+}*/
+

@@ -19,8 +19,7 @@ var AnimateCanvas = React.createClass({
 	},
 
 	animate: function() {
-
-		var renderer = PIXI.autoDetectRenderer(950, 350, { transparent: true });
+		var renderer = PIXI.autoDetectRenderer(1450, 350, { transparent: true });
 		this.section.appendChild(renderer.view);
 
 		function createScene() {
@@ -38,7 +37,7 @@ var AnimateCanvas = React.createClass({
 	
 			function face() {
 				var face = PIXI.Sprite.fromImage('image/section-one-face-image.jpg');
-				face.position.x = 180;
+				face.position.x = 520;
 				face.position.y = -500;
 
 				sectionContainer.addChild(face);
@@ -54,7 +53,7 @@ var AnimateCanvas = React.createClass({
 			function rectangleTwo() {
 				var rect = new PIXI.Graphics();
 				rect.beginFill(0x00FA9A, 1);
-				rect.drawRect(110, 290, 230, 100); // x, y, width, height
+				rect.drawRect(120, 290, 230, 100); // x, y, width, height
 				
 				rect.endFill();
 				stage.addChild(rect);
@@ -63,12 +62,11 @@ var AnimateCanvas = React.createClass({
 			function rectangleOne() {
 				var rect2 = new PIXI.Graphics();
 				rect2.beginFill(0x00FA9A, 1);
-				rect2.drawRect((renderer.width - 390),(renderer.height - 60), 230, 100);
+				rect2.drawRect((renderer.width - 490),(renderer.height - 60), 230, 100);
 
 				rect2.endFill();
 				stage.addChild(rect2);
 			};
-
 
 
 			// TO DO: work out why itwon't work dynamic
@@ -97,7 +95,7 @@ var AnimateCanvas = React.createClass({
 				var circle2 = new PIXI.Graphics()
 				circle2.lineStyle(2);
 				circle2.beginFill(0xff0000, 0.8);
-				circle2.drawCircle(870, 300, 35, 30);
+				circle2.drawCircle(1270, 300, 35, -2000);
 
 				circle2.endFill();
 				stage.addChild(circle2);

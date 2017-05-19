@@ -20,7 +20,7 @@ var AnimateFooter = React.createClass({
 
     animate: function() {
 
-		var renderer = PIXI.autoDetectRenderer(1000, 60);
+		var renderer = PIXI.autoDetectRenderer(1400, 60);
 		this.section.appendChild(renderer.view);
 		 
 		// create the root of the scene graph
@@ -56,7 +56,7 @@ var AnimateFooter = React.createClass({
 		tenticle.x = 59;
 		tenticle.x = 159;
 		tenticle.y = 9000;
-		tenticle.position.set(204, 134);
+		tenticle.position.set(304, 134);
 		tenticle.height = 520;
 		tenticle.width = 3000;
 
@@ -65,7 +65,7 @@ var AnimateFooter = React.createClass({
 		    tenticleContainer.position.x = 20;
 		    tenticleContainer.position.y = 10;
 
-		tenticleContainer.scale.set(1000 / 4500);
+		tenticleContainer.scale.set(1900 / 6500);
 		stage.addChild(tenticleContainer);
 
 		// add the snakes to the container

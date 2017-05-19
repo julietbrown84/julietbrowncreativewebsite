@@ -4,9 +4,8 @@ var ReactDOM = require('react-dom');
 var Carousel = require('react-responsive-carousel').Carousel;
 
 var carouselImages = [
-	'http://placekitten.com/g/600/400',
-	'http://placebear.com/600/400',
-	'image/fill.jpg'
+	'image/fill.jpg',
+	'image/artwork-three.jpg'
 ];
 
 var Video = React.createClass({
@@ -53,7 +52,6 @@ var Carousel = React.createClass({
 	},
 
 	render: function () {
-
 		return (
 			<div {...this.getProps()}>
 				<div className="carousel--image">

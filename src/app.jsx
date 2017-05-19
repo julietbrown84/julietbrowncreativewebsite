@@ -9,27 +9,23 @@ var App = React.createClass({
 	render: function () {
 		var list = [
 			{
-				title: 'Menu item 1',
+				title: 'About',
 				link: 'https://google.co.nz/'
 			},
 			{
-				title: 'Menu item 2',
+				title: 'Contact',
 				link: 'https://google.co.nz/'
 			},
 			{
-				title: 'Menu item 3',
+				title: 'Web work',
 				link: 'https://google.co.nz/'
 			},
 			{
-				title: 'Menu item 4',
+				title: 'Artwork',
 				link: 'https://google.co.nz/'
 			},
 			{
-				title: 'Menu item 5',
-				link: 'https://google.co.nz/'
-			},
-			{
-				title: 'Menu item 6',
+				title: 'Blog',
 				link: 'https://google.co.nz/'
 			}
 		];
