@@ -57,20 +57,17 @@ var Nav = React.createClass({
 				<div className="main-navigation__nav-box-right" ref="rightside">
 					<div className="main-navigation__top">
 						<div className="row">
+                            <div  className="main-navigation__text large-3 columns text-center">
+                 				<p> test teststsskdtksjh</p>
+                            </div>
 
-                           <div  className="main-navigation__text large-3 columns text-center">
-                 			<p> test teststsskdtksjh</p>
-                          </div>
-
-                           <div  className="main-navigation__text large-3 columns text-center">
+                            <div  className="main-navigation__text large-3 columns text-center">
                  				<p> test</p>
-                          </div>
-
+                            </div>
                           <div className="large-5 columns text-center">
 	                          	<div className="main-navigation__text-three">
-	                 				<p>julietbrown84@gmail.com</p>
-	                 			
-	                          </div>
+	                 				<p>julietbrown84@gmail.com</p>	
+	                          	</div>
 	                          	<div className="main-navigation__left-right-icons row">
 		                 				<div className="icon icon--twitter"></div>
 		                 				<div className="icon icon--twitter"></div>
