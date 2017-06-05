@@ -19,7 +19,7 @@ var AnimateCanvas = React.createClass({
 	},
 
 	animate: function() {
-		var renderer = PIXI.autoDetectRenderer(1450, 350, { transparent: true });
+		var renderer = PIXI.autoDetectRenderer(1250, 350, { transparent: true });
 		this.section.appendChild(renderer.view);
 
 		function createScene() {
@@ -29,15 +29,15 @@ var AnimateCanvas = React.createClass({
 			
 		    renderer.backgroundColor = 0xffffff;
 
-			sectionContainer.position.x = 110;
+			sectionContainer.position.x = 125;
 			sectionContainer.position.y =  220;
-			sectionContainer.scale.set(400 / 700);
+			sectionContainer.scale.set(300 / 700);
 
 			stage.addChild(sectionContainer);
 	
 			function face() {
 				var face = PIXI.Sprite.fromImage('image/section-one-face-image.jpg');
-				face.position.x = 520;
+				face.position.x = 120;
 				face.position.y = -500;
 
 				sectionContainer.addChild(face);
@@ -53,7 +53,7 @@ var AnimateCanvas = React.createClass({
 			function rectangleTwo() {
 				var rect = new PIXI.Graphics();
 				rect.beginFill(0x00FA9A, 1);
-				rect.drawRect(120, 290, 230, 100); // x, y, width, height
+				rect.drawRect(100, 290, 160, 100); // x, y, width, height
 				
 				rect.endFill();
 				stage.addChild(rect);
@@ -62,7 +62,7 @@ var AnimateCanvas = React.createClass({
 			function rectangleOne() {
 				var rect2 = new PIXI.Graphics();
 				rect2.beginFill(0x00FA9A, 1);
-				rect2.drawRect((renderer.width - 490),(renderer.height - 60), 230, 100);
+				rect2.drawRect((renderer.width - 790),(renderer.height - 60), 160, 100);
 
 				rect2.endFill();
 				stage.addChild(rect2);
@@ -85,7 +85,7 @@ var AnimateCanvas = React.createClass({
 				var graphics = new PIXI.Graphics()
 				graphics.lineStyle(0);
 				graphics.beginFill(0xff0000, 0.8);
-				graphics.drawCircle(50, 300, 35, 30);
+				graphics.drawCircle(-90, 300, 35, 30);
 
 				graphics.endFill();
 				stage.addChild(graphics);
@@ -95,7 +95,7 @@ var AnimateCanvas = React.createClass({
 				var circle2 = new PIXI.Graphics()
 				circle2.lineStyle(2);
 				circle2.beginFill(0xff0000, 0.8);
-				circle2.drawCircle(1270, 300, 35, -2000);
+				circle2.drawCircle(50, 300, 35, -2000);
 
 				circle2.endFill();
 				stage.addChild(circle2);

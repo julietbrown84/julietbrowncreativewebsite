@@ -20,7 +20,7 @@ var AnimateFooter = React.createClass({
 
     animate: function() {
 
-		var renderer = PIXI.autoDetectRenderer(1400, 60);
+		var renderer = PIXI.autoDetectRenderer(1000, 80);
 		this.section.appendChild(renderer.view);
 		 
 		// create the root of the scene graph
@@ -28,10 +28,10 @@ var AnimateFooter = React.createClass({
 	    renderer.backgroundColor = 0xffffff;
 
 		function logo() {
-			var logo = PIXI.Sprite.fromImage('image/section-one-face-image.jpg');
-			logo.position.x = 30;
-			logo.position.y = -400;
-			logo.scale.set(30 / 30);
+			var logo = PIXI.Sprite.fromImage('image/close.svg');
+			logo.position.x = -30;
+			logo.position.y = -200;
+			logo.scale.set(100 / 210);
 			tenticleContainer.addChild(logo);
 		}
 
@@ -39,7 +39,7 @@ var AnimateFooter = React.createClass({
 
 		var count = 0;
 		// build a rope!
-		var ropeLength = 2800 / 13;
+		var ropeLength = 1600 / 13;
 		var points = [];
 		for (var i = 0; i < 20; i++){
 		    points.push(new PIXI.Point(i * ropeLength, 0));
@@ -57,8 +57,8 @@ var AnimateFooter = React.createClass({
 		tenticle.x = 159;
 		tenticle.y = 9000;
 		tenticle.position.set(304, 134);
-		tenticle.height = 520;
-		tenticle.width = 3000;
+		tenticle.height = 320;
+		tenticle.width = 1200;
 
 		// making the snake container
 		var tenticleContainer = new PIXI.Container();

@@ -32,6 +32,7 @@ var Nav = React.createClass({
 		return (
 			<div className="header__container">
 				<div className="main-navigation container">
+					<i className="icon icon--logo" />
 					<i onClick={this.handleClick} className={classes} />
 					{this.state.active ? this.renderMenu() : null}
 				</div>
@@ -69,8 +70,10 @@ var Nav = React.createClass({
 	                 				<p>julietbrown84@gmail.com</p>	
 	                          	</div>
 	                          	<div className="main-navigation__left-right-icons row">
-		                 				<div className="icon icon--twitter"></div>
-		                 				<div className="icon icon--twitter"></div>
+                         			<div className="icon icon--nav-logo"></div>
+                          			<div className="icon icon--email"></div>
+	                 				<div className="icon icon--facebook"></div>
+	                 				<div className="icon icon--twitter"></div>
 	                 			</div>
 	                 		</div>
                        </div>

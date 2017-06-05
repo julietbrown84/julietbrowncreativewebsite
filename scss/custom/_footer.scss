@@ -1,10 +1,9 @@
 .footer {
   &__container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 4rem 0 4rem;
-/*    padding-top: 2rem;*/
     display: -webkit-box;
     display: -ms-flexbox;
     //display: flex;
@@ -12,6 +11,13 @@
   }
 
   &__text {
+    float: right;
     display: inline;
   }
+}
+
+.red-dot {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
 }

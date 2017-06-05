@@ -5,12 +5,14 @@ var Footer = React.createClass({
 
     render: function() {
         return (
-            <footer className="footer__container section-container">
-                 <div className="footer__logo">
-                       <AnimateFooter />
-                    <div className="footer__logo-text"> © 2017 JULIET BROWN <span> TO DO . reddot</span></div>
-                </div>
-            </footer >  
+            <footer className="footer">
+                <div className="footer__container section-container">
+                     <div className="footer__logo"></div>
+                    <AnimateFooter />  
+                    <i className="icon icon--footer-logo" />
+                    <div className="footer__text">JULIET BROWN 2017 ©<span className="red-dot">.</span></div>
+                </div>  
+            </footer>
         );
     },
 });
