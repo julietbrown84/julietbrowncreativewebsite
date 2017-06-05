@@ -10,6 +10,9 @@ var Footer = React.createClass({
                      <div className="footer__logo"></div>
                     <AnimateFooter />  
                     <i className="icon icon--footer-logo" />
+                    <div className="icon icon--footer-email"></div>
+                    <div className="icon icon--facebook"></div>
+                    <div className="icon icon--twitter"></div>
                     <div className="footer__text">JULIET BROWN 2017 ©<span className="red-dot">.</span></div>
                 </div>  
             </footer>

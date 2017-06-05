@@ -2,7 +2,6 @@
   &__icon {
     float: right;
     cursor: pointer;
-    float: right;
     position: absolute;
     z-index: 99999999;
   }
@@ -69,19 +68,16 @@
     -moz-transition: all 0.3s ease-in-out; 
     -o-transition: all 0.3s ease-in-out; 
     transition: all 0.3s ease-in-out;
+
     &.active {
        top: -100%;
     }
   }
 
   &__left-right-icons {
-
-    .icon--nav-logo {
-      margin-right: 30px;
-    }
-
     .icon--email, .icon--twitter, .icon--facebook {
-      margin-left: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 
@@ -91,25 +87,21 @@
   }
 
   &__text {
-    padding: 100px;
     font-size: 50px;
     color: white;
-    margin-top: 20px;
-    font-size: 20px;
-    height: 10em;
+    margin-top: 230px;
+    font-size: 22px;
     display: flex;
     align-items: center; 
     justify-content: center;
   }
 
   &__text-three {
-    padding: 100px;
     font-size: 50px;
     color: white;
-    margin-top: 20px;
     font-size: 20px;
-    height: 10em;
     display: flex;
+    margin-top: 45px;
     align-items: center; 
     justify-content: center;
   }

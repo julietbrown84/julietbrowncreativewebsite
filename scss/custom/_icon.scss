@@ -36,28 +36,41 @@
 
   &--nav-logo {
     background-image: url("../image/icon/nav-logo.svg");
-    height: 50px;
-    width: 85px;
-    flost: left;
+    height: 70px;
+    width: 90px;
+  }
+
+  &--large-logo {
+    background-image: url("../image/icon/large-logo.svg");
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
   }
 
   &--twitter {
     background-image: url("../image/icon/twitter.svg");
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
   }
 
   &--facebook {
     background-image: url("../image/icon/facebook.svg");
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
   }
 
   &--email {
     background-image: url("../image/icon/email.svg");
-    height: 25px;
-    width: 25px;
+    height: 40px;
+    width: 40px;
   }
+
+  &--footer-email {
+    background-image: url("../image/icon/footer-email.svg");
+    height: 40px;
+    width: 40px;
+  }
+
   &--arrow-down-grey {
       background-image: url("../image/icon/arrow-down-grey.svg");
       float: right;

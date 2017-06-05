@@ -61,16 +61,16 @@ var Nav = React.createClass({
                             <div  className="main-navigation__text large-3 columns text-center">
                  				<p> test teststsskdtksjh</p>
                             </div>
-
                             <div  className="main-navigation__text large-3 columns text-center">
                  				<p> test</p>
                             </div>
                           <div className="large-5 columns text-center">
+                          		<div className="icon icon--large-logo"></div>
 	                          	<div className="main-navigation__text-three">
 	                 				<p>julietbrown84@gmail.com</p>	
 	                          	</div>
+
 	                          	<div className="main-navigation__left-right-icons row">
-                         			<div className="icon icon--nav-logo"></div>
                           			<div className="icon icon--email"></div>
 	                 				<div className="icon icon--facebook"></div>
 	                 				<div className="icon icon--twitter"></div>
