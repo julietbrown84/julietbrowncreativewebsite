@@ -80,4 +80,10 @@
       -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
       transform: rotate(270deg);
   }
+
+  &--juliet-logo {
+     background-image: url("../image/icon/juliet-logo.svg");
+     height: 100px;
+     width: 100px;
+  }
 }
